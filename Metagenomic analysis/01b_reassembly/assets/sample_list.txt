@@ -1,0 +1,5 @@
+E4_d458 /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/E4_d458/raw_reads/Read_1.fq     /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/E4_d458/raw_reads/Read_2.fq
+G3_d458 /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/G3_d458/raw_reads/Read_1.fq     /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/G3_d458/raw_reads/Read_2.fq
+L3_d458 /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/L3_d458/raw_reads/Read_1.fq     /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/L3_d458/raw_reads/Read_2.fq
+M4_d458 /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/M4_d458/raw_reads/Read_1.fq     /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/M4_d458/raw_reads/Read_2.fq
+Van_BES /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/Van_BES/raw_reads/Read_1.fq     /storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG/Van_BES/raw_reads/Read_2.fq

@@ -1,0 +1,31 @@
+import glob
+import pandas as pd
+
+"""
+Author: Mara Maeke
+Affiliation: University of Bremen - Marine Ecophysiology
+Aim: 
+"""
+
+# specify config file
+# change this path to the location of the config file with your project specific settings
+configfile: "/storage/hdd2/mmaeke/Metagenomics/PhD/metaG_reassembly/config/config.yaml"
+
+# specify wildcards for samples and paths of input file names
+sample_table = pd.read_table(config["sample_list"], sep="\t", lineterminator="\n", header=None, names = ["SID", "path_R1", "path_R2"])
+SAMPLES = sample_table.SID.to_list()
+SID = sample_table.SID.to_list()
+PATH_R1 = sample_table.set_index('SID')['path_R1'].to_dict()
+PATH_R2 = sample_table.set_index('SID')['path_R2'].to_dict()
+
+
+# define local rules
+localrules: all, bin_reassembly_orig
+
+# collect all output
+rule all:
+	input:
+		final_bins = config["adir"] + "/intermediate_results/Bin_final/done",
+                checkm2_stats = config["adir"] + "/intermediate_results/Bin_final/checkm2_out/quality_report.tsv" 
+# load rules
+include: config["wdir"] + "/rules/final_bins.smk"

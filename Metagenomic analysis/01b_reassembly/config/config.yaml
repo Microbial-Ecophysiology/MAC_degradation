@@ -1,0 +1,41 @@
+# Project name (will be used in the file names generated during this workflow)
+project: "MAC_metaG"
+
+# Location of repository with analysis workflow
+wdir: "/storage/hdd2/mmaeke/Metagenomics/PhD/metaG_reassembly"
+
+# Name of file with sample names and sequence file locations
+sample_list: "/storage/hdd2/mmaeke/Metagenomics/PhD/metaG_reassembly/assets/sample_list.txt"
+
+# Directory for analysis data
+adir: "/storage/hdd2/mmaeke/Metagenomics/PhD/MAC_metaG"
+
+# Default number of threads
+threads: 1
+
+# Number of threads for medium cpu-intensive jobs (e.g. trimming)
+sample_threads: 96
+
+# Number of threads for other parallel processing
+parallel_threads: 96
+
+# Number of threads for metaerg annotation
+annotation_threads: 40
+
+# CheckM completeness and contamination thresholds for bin refinement
+completeness: 60
+contamination: 10
+
+# dRep covered fraction (calculated: alignment length / larger genome)
+# This parameter may correspond to the chosen completeness, assuming that if 1 genome in the comparison is 100% complete and the other only 50%
+# (i.e. minimum required completeness), the maximum possible covered fraction of the larger genome is 0.5
+cov_frac: 0.5
+
+# Percentage identity for bin quantification (--min-read-percent-identity parameter for coverm)
+read_identity: 95
+
+# Location of metawrap scripts
+metawrap_scripts: "/opt/moep/metaWRAP/bin/metawrap-scripts"
+
+# Location of checkm2 conda env yaml
+checkm2: "/opt/moep/checkm2/checkm2.yml"
